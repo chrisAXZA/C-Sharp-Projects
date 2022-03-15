@@ -1,2 +1,2 @@
-# C-Sharp-Projects
-Unit Tests, EF-Core and Application Projects
+# C-Sharp Projects
+Unit-Testing, EF-Core and ASP.Net projects
