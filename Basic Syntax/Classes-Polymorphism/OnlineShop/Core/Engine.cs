@@ -1,6 +1,7 @@
 ﻿namespace OnlineShop.Core
 {
     using System;
+    
     using OnlineShop.IO;
 
     public class Engine : IEngine

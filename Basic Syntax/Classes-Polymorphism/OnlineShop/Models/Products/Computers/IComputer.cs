@@ -1,6 +1,7 @@
 ﻿namespace OnlineShop.Models.Products.Computers
 {
     using System.Collections.Generic;
+    
     using OnlineShop.Models.Products.Components;
     using OnlineShop.Models.Products.Peripherals;
     
