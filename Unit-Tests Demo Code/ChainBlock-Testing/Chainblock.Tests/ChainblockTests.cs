@@ -1052,7 +1052,6 @@
 
             double maxAmount = 30;
 
-
             actualTransactions = this.chainblock
                 .GetByTransactionStatusAndMaximumAmount(TransactionStatus.Failed, maxAmount)
                 .ToList();
