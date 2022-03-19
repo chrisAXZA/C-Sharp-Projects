@@ -1,6 +1,7 @@
-﻿using System;
-namespace Chainblock.Common
+﻿namespace Chainblock.Common
 {
+    using System;
+
     public static class ExceptionMessages
     {
         public static string InvalidIdMessage =

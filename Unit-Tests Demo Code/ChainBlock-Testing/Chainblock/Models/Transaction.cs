@@ -1,19 +1,20 @@
-﻿using System;
-using Chainblock.Common;
-using Chainblock.Contracts;
-
-namespace Chainblock.Models
+﻿namespace Chainblock.Models
 {
+    using System;
+    
+    using Chainblock.Common;
+    using Chainblock.Contracts;
+
     public class Transaction : ITransaction
     {
         private const int MIN_ID_VALUE = 0;
         private const double MIN_AMOUNT_VALUE = 0.0;
 
         private int id;
-        private TransactionStatus status;
-        private string from;
         private string to;
+        private string from;
         private double amount;
+        private TransactionStatus status;
 
         public Transaction(int id, TransactionStatus transactionStatus,
             string from, string to, double amount)
@@ -40,6 +41,7 @@ namespace Chainblock.Models
                 this.id = value;
             }
         }
+        
         // Also variant
         //public TransactionStatus Status { get; set; }
         public TransactionStatus Status

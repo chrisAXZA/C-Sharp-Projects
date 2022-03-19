@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using Chainblock.Common;
-using Chainblock.Contracts;
-
-namespace Chainblock.Core
+﻿namespace Chainblock.Core
 {
+    using System;
+    using System.Linq;
+    using System.Collections;
+    using System.Collections.Generic;
+    
+    using Chainblock.Common;
+    using Chainblock.Contracts;
+
     public class Chainblock : IChainblock
     {
         private ICollection<ITransaction> transactions;
@@ -111,6 +112,7 @@ namespace Chainblock.Core
             //}
 
             return senders;
+            
             //IEnumerable<string> senders = this.transactions.OrderByDescending(t => t.Amount)
             //    .Where(t => t.Status == status)
             //    .Select(t => t.From);
@@ -219,7 +221,6 @@ namespace Chainblock.Core
             //          .Where(v => v.Status == status)
             //          .OrderByDescending(t => t.Amount);
 
-
             IEnumerable<ITransaction> transactions = this.transactions
                 .Where(t => t.Status == status)
                 .OrderByDescending(t => t.Amount);
@@ -248,7 +249,6 @@ namespace Chainblock.Core
                 .OrderByDescending(t => t.Amount);
         }
 
-
         public void RemoveTransactionById(int id)
         {
             //ITransaction transaction = this.transactions.FirstOrDefault(t => t.Id == id);
@@ -257,6 +257,7 @@ namespace Chainblock.Core
             //    throw new InvalidOperationException
             //        (ExceptionMessages.RemoveNonExistingTransactionTransactionMessage);
             //}
+
             try
             {
             ITransaction transaction = this.GetById(id);
